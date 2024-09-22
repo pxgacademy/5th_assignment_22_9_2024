@@ -41,11 +41,16 @@ const noakhaliFunc = () => {
     return;
   }
 
+  noakhaliInput = parseFloat(noakhaliInput);
+  if (noakhaliInput < 0) {
+    alert("Invalid input");
+    return;
+  }
+
   let mainBalance = getInputInnerTextById("mainBalance");
   let noakhaliBalance = getInputInnerTextById("noakhaliBalance");
   mainBalance = parseFloat(mainBalance);
   noakhaliBalance = parseFloat(noakhaliBalance);
-  noakhaliInput = parseFloat(noakhaliInput);
 
   document.getElementById("mainBalance").innerText =
     mainBalance - noakhaliInput;
@@ -77,11 +82,16 @@ const feniFunc = () => {
     return;
   }
 
+  feniInput = parseFloat(feniInput);
+  if (feniInput < 0) {
+    alert("Invalid input");
+    return;
+  }
+
   let mainBalance = getInputInnerTextById("mainBalance");
   let feniBalance = getInputInnerTextById("feniBalance");
   mainBalance = parseFloat(mainBalance);
   feniBalance = parseFloat(feniBalance);
-  feniInput = parseFloat(feniInput);
 
   document.getElementById("mainBalance").innerText = mainBalance - feniInput;
   document.getElementById("feniBalance").innerText = feniBalance + feniInput;
@@ -111,11 +121,16 @@ const quotaFunc = () => {
     return;
   }
 
+  quotaInput = parseFloat(quotaInput);
+  if (quotaInput < 0) {
+    alert("Invalid input");
+    return;
+  }
+
   let mainBalance = getInputInnerTextById("mainBalance");
   let quotaBalance = getInputInnerTextById("quotaBalance");
   mainBalance = parseFloat(mainBalance);
   quotaBalance = parseFloat(quotaBalance);
-  quotaInput = parseFloat(quotaInput);
 
   document.getElementById("mainBalance").innerText = mainBalance - quotaInput;
   document.getElementById("quotaBalance").innerText = quotaBalance + quotaInput;
