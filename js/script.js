@@ -1,6 +1,10 @@
 // "use strict";
 
-// my_modal_5.showModal()
+// go to blog page
+const blogBtn = getInputById("blog");
+blogBtn.addEventListener("click", () => {
+  location.href = "./bloges.html";
+});
 
 // toggle donation and history
 const donationBtn = getInputById("donationBtn");
