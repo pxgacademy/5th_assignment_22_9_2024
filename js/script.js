@@ -42,7 +42,7 @@ const noakhaliFunc = () => {
   }
 
   noakhaliInput = parseFloat(noakhaliInput);
-  if (noakhaliInput < 0) {
+  if (noakhaliInput <= 0) {
     alert("Invalid input");
     return;
   }
@@ -88,7 +88,7 @@ const feniFunc = () => {
   }
 
   feniInput = parseFloat(feniInput);
-  if (feniInput < 0) {
+  if (feniInput <= 0) {
     alert("Invalid input");
     return;
   }
@@ -132,7 +132,7 @@ const quotaFunc = () => {
   }
 
   quotaInput = parseFloat(quotaInput);
-  if (quotaInput < 0) {
+  if (quotaInput <= 0) {
     alert("Invalid input");
     return;
   }
