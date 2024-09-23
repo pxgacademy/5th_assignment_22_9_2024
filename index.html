@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Website</title>
-    <!-- CSS raw file -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Assignment 5</title>
     <!-- Google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +24,16 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- CSS -->
+    <style>
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    </style>
   </head>
   <!-- body started here -->
   <body class="font-manrope max-w-[1440px] mx-auto">
@@ -105,7 +113,9 @@
                 the lives of those in need.
               </p>
 
-              <div class="flex flex-col gap-2 mt-4">
+              <div
+                class="flex flex-col gap-2 mt-4 appearance-none outline-gray-200"
+              >
                 <input
                   class="border border-gray-200 p-3 rounded-lg"
                   type="number"

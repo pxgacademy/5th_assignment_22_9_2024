@@ -48,6 +48,11 @@ const noakhaliFunc = () => {
   }
 
   let mainBalance = getInputInnerTextById("mainBalance");
+  if (mainBalance < noakhaliInput) {
+    alert("Insufficient balance");
+    return;
+  }
+
   let noakhaliBalance = getInputInnerTextById("noakhaliBalance");
   mainBalance = parseFloat(mainBalance);
   noakhaliBalance = parseFloat(noakhaliBalance);
@@ -89,6 +94,11 @@ const feniFunc = () => {
   }
 
   let mainBalance = getInputInnerTextById("mainBalance");
+  if (mainBalance < feniInput) {
+    alert("Insufficient balance");
+    return;
+  }
+
   let feniBalance = getInputInnerTextById("feniBalance");
   mainBalance = parseFloat(mainBalance);
   feniBalance = parseFloat(feniBalance);
@@ -128,6 +138,11 @@ const quotaFunc = () => {
   }
 
   let mainBalance = getInputInnerTextById("mainBalance");
+  if (mainBalance < quotaInput) {
+    alert("Insufficient balance");
+    return;
+  }
+
   let quotaBalance = getInputInnerTextById("quotaBalance");
   mainBalance = parseFloat(mainBalance);
   quotaBalance = parseFloat(quotaBalance);
